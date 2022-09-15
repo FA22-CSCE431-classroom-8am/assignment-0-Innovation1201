@@ -1,6 +1,6 @@
 class Book < ApplicationRecord
     validates :title, presence: true
-    t.string :author
-    t.integer :price
-    t.date :published-date
+    validates :author, presence: true
+    validates :price, presence: true
+    validates :published_date, presence: true
 end
